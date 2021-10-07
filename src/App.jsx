@@ -8,7 +8,8 @@ import { css } from '@emotion/css';
 import AboutLinley from './com/AboutLinley';
 import Lorem from './com/lorem';
 import Ourservices from './com/ourservices';
-
+import Contactus from './com/contactus';
+import Footer from './com/footer';
 export default function App() {
   return (
     <div>
@@ -24,6 +25,8 @@ export default function App() {
       <AboutLinley></AboutLinley>
       <Lorem></Lorem>
       <Ourservices></Ourservices>
+      <Contactus></Contactus>
+      <Footer></Footer>
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default function AboutLinley() {
         }
       `}
     >
-      <div className='grid grid-cols-12 '>
+      <div className={'grid grid-cols-12 '}>
         <div className='col-span-4'>
           <img src='img/Layer_4.png' alt='' />
         </div>
