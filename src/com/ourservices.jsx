@@ -1,6 +1,4 @@
-
 // parseFloat(12.000.toFixed(2))
-
 
 import { css } from '@emotion/css';
 import React from 'react';
@@ -11,54 +9,81 @@ export default function ourservices() {
       className={css`
         background-color: #021e30;
         padding: 1px;
+        position: relative;
       `}
     >
+      <img
+        className={
+          'md:hidden ' +
+          css`
+            position: absolute;
+            top: 0;
+            left: -60px;
+          `
+        }
+        src='img/Layer_14.png'
+        alt=''
+      />
+      <img
+        className={
+          'md:hidden ' +
+          css`
+            position: absolute;
+            top: 0;
+            right: -60px;
+          `
+        }
+        src='img/Layer_15.png'
+        alt=''
+      />
+
       <div
-        className={css`
-          max-width: 1096px;
-          margin: 0 auto;
-          background-color: #021e30;
-
-          .ourservices {
+        className={
+          'w-11/12 ' +
+          css`
+            max-width: 1096px;
             margin: 0 auto;
-            display: block;
-            h1 {
-              /* Style for "our servic" */
-              text-align: center;
+            background-color: #021e30;
 
-              color: #ffffff;
-              font-family: Mermaid;
-              font-size: 56px;
-              font-weight: 700;
-              font-style: normal;
-              letter-spacing: normal;
-              line-height: 56px;
-
-              text-transform: uppercase;
-              /* Text style for "our servic" */
-              font-style: normal;
-              letter-spacing: 3.36px;
-              line-height: normal;
-            }
-            p {
-              /* Style for "Lorem ipsu" */
-              max-width: 422px;
+            .ourservices {
               margin: 0 auto;
-              color: #ffffff;
-              font-family: Raleway;
-              font-size: 16px;
-              font-weight: 400;
-              font-style: normal;
-              letter-spacing: normal;
-              line-height: 28px;
-              text-align: center;
-              /* Text style for "Lorem ipsu" */
-              font-style: normal;
-              letter-spacing: 0.96px;
-              line-height: normal;
+              display: block;
+              h1 {
+                text-align: center;
+
+                color: #ffffff;
+                font-family: Mermaid;
+                font-size: 56px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 56px;
+
+                text-transform: uppercase;
+
+                font-style: normal;
+                letter-spacing: 3.36px;
+                line-height: normal;
+              }
+              p {
+                max-width: 422px;
+                margin: 0 auto;
+                color: #ffffff;
+                font-family: Raleway;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 28px;
+                text-align: center;
+
+                font-style: normal;
+                letter-spacing: 0.96px;
+                line-height: normal;
+              }
             }
-          }
-        `}
+          `
+        }
       >
         <div
           className={
@@ -69,7 +94,7 @@ export default function ourservices() {
             `
           }
         >
-          <h1>our services</h1>
+          <h1 className='sm:mb-6'>our services</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut.
@@ -78,17 +103,25 @@ export default function ourservices() {
 
         <div
           className={
-            'grid grid-cols-4 mx-auto ' +
+            'grid grid-cols-4 mx-auto md:grid-cols-2 sm:grid-cols-1 ' +
             css`
               max-width: 1023px;
               margin-bottom: 140px;
 
               gap: 0 50px;
               div {
+                @media (max-width: 425px) {
+                  .div1 {
+                    margin-bottom: 15px !important;
+                  }
+                  margin-bottom: 25px !important;
+                }
+
                 .div2 {
-                  display: inline-block;
                   margin-left: auto;
                   margin-right: auto;
+                  display: grid;
+                  justify-content: center;
                 }
                 .div1 {
                   height: 111px;
@@ -97,8 +130,7 @@ export default function ourservices() {
                 }
                 h1 {
                   margin-bottom: 30px;
-                  /* Style for "Fundraiser" */
-                  width: 144px;
+
                   height: 15px;
                   color: #ffffff;
                   font-family: Mermaid;
@@ -109,13 +141,12 @@ export default function ourservices() {
                   line-height: 56px;
                   text-align: left;
                   text-transform: uppercase;
-                  /* Text style for "Fundraiser" */
+
                   font-style: normal;
                   letter-spacing: 1.2px;
                   line-height: normal;
                 }
                 p {
-                  /* Style for "Lorem ipsu" */
                   width: 157px;
                   height: 73px;
                   color: #ffffff;
@@ -126,7 +157,7 @@ export default function ourservices() {
                   letter-spacing: normal;
                   line-height: 20px;
                   text-align: left;
-                  /* Text style for "Lorem ipsu" */
+
                   font-style: normal;
                   letter-spacing: 0.84px;
                   line-height: normal;
@@ -148,35 +179,41 @@ export default function ourservices() {
             </div>
           </div>
           <div className={'' + css``}>
-            <div className='flex justify-center'>
-              <img className='m-auto	block	' src='img/one.png' alt='' />
+            <div className='flex justify-center div1'>
+              <img className='m-auto	block	' src='img/s2.png' alt='' />
             </div>
-            <h1 className='text-center'>Fundraisers{}</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor{' '}
-            </p>
-          </div>
+            <div className='div2'>
+              <h1 className='text-center'>special occasions{}</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor{' '}
+              </p>
+            </div>
+          </div>{' '}
           <div className={'' + css``}>
-            <div className='flex justify-center'>
-              <img className='m-auto	block	' src='img/one.png' alt='' />
+            <div className='flex justify-center div1'>
+              <img className='m-auto	block	' src='img/s3.png' alt='' />
             </div>
-            <h1 className='text-center'>Fundraisers{}</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor{' '}
-            </p>
-          </div>
+            <div className='div2'>
+              <h1 className='text-center'>corporate events{}</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor{' '}
+              </p>
+            </div>
+          </div>{' '}
           <div className={'' + css``}>
-            <div className='flex justify-center'>
-              <img className='m-auto	block	' src='img/one.png' alt='' />
+            <div className='flex justify-center div1'>
+              <img className='m-auto	block	' src='img/s4.png' alt='' />
             </div>
-            <h1 className='text-center'>Fundraisers{}</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor{' '}
-            </p>
-          </div>
+            <div className='div2'>
+              <h1 className='text-center'>dinner parties{}</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor{' '}
+              </p>
+            </div>
+          </div>{' '}
         </div>
       </div>
     </div>

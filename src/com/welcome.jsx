@@ -5,6 +5,8 @@ export default function Welcome() {
   return (
     <div
       className={css`
+        background-color: #082132;
+
         background-image: url('img/Layer_2.png');
         min-height: 679px;
         display: grid;
@@ -33,7 +35,7 @@ export default function Welcome() {
 
           h1 {
             /* Style for "linley’s o" */
-            margin-bottom: 45px;
+            margin-bottom: 30px;
             color: #ffffff;
             font-family: Mermaid;
             font-size: 64px;
@@ -45,7 +47,7 @@ export default function Welcome() {
             text-transform: uppercase;
             /* Text style for "linley’s o" */
             font-style: normal;
-
+            letter-spacing: 3.84px;
             line-height: normal;
           }
           p {
@@ -72,10 +74,25 @@ export default function Welcome() {
         }
       `}
     >
-      <div className='welcome grid mx-auto grid-cols-12 '>
-        <div className='catering col-span-8'>
-          <h2>welcome to</h2>
-          <h1>linley’s outside catering</h1>
+      <div className='welcome w-11/12 grid mx-auto grid-cols-12 '>
+        <div className='catering col-span-8 md:p-10 sm:col-span-12 sm:p-5'>
+          <h2>
+            {' '}
+            <span
+              className={css`
+                width: 63px;
+                height: 2px;
+                background-color: #e0c39a;
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align: middle;
+              `}
+            ></span>{' '}
+            welcome to
+          </h2>
+          <h1 className='md:text-3xl lg:text-5xl '>
+            linley’s outside catering
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
@@ -83,8 +100,14 @@ export default function Welcome() {
             accumsan lacus vel facilisis.
           </p>
         </div>
-        <div className='col-span-4'>
-          <img src='img/Layer_3.svg' alt='' />
+        <div className='col-span-4 sm:hidden'>
+          <img
+            className={css`
+              width: 100%;
+            `}
+            src='img/Layer_3.svg'
+            alt=''
+          />
         </div>
       </div>
     </div>

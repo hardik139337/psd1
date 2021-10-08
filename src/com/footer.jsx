@@ -5,16 +5,13 @@ export default function footer() {
   return (
     <div
       className={css`
-        min-height: 500px;
-        /* Style for "Rectangle" */
-
+        padding: 1px;
         background-color: #01111b;
       `}
     >
-      footer
       <div
         className={
-          'container mx-auto ' +
+          'container w-11/12 mx-auto ' +
           css`
             max-width: 1096px;
           `
@@ -22,14 +19,16 @@ export default function footer() {
       >
         <div
           className={
-            'logodiv flex  items-center ' +
+            'logodiv flex flex-wrap  items-center sm:mb-10 ' +
             css`
               margin-top: 127px;
               margin-bottom: 20px;
+              gap: 50px 0;
               a {
-                /* Style for "Home" */
-                /* width: 551px;
-height: 10px; */
+                @media (max-width: 769px) {
+                  margin-left: 25px;
+                }
+
                 margin-left: 50px;
                 color: #ffffff;
                 font-family: Raleway;
@@ -40,7 +39,7 @@ height: 10px; */
                 line-height: 96.01px;
                 text-align: left;
                 text-transform: uppercase;
-                /* Text style for "Home" */
+
                 font-style: normal;
                 letter-spacing: 2.52px;
                 line-height: normal;
@@ -48,7 +47,7 @@ height: 10px; */
             `
           }
         >
-          <img className='mr-auto' src='img/logo.png' alt='' />
+          <img className='mr-auto img1' src='img/logo.png' alt='' />
           <a href=''>Home </a>
           <a href=''>About Us </a>
           <a href=''>Our services</a>
@@ -66,7 +65,6 @@ height: 10px; */
           className={
             'line mx-auto ' +
             css`
-              /* Style for "Rectangle" */
               max-width: 774px;
               height: 1px;
               background-color: #e0c39a;
@@ -76,9 +74,6 @@ height: 10px; */
         ></div>
         <p
           className={css`
-            /* Style for "Linley’s O" */
-            /* width: 399px;
-height: 14px; */
             color: #ffffff;
             font-family: Raleway;
             font-size: 14px;
@@ -87,11 +82,11 @@ height: 14px; */
             letter-spacing: normal;
             line-height: 96.01px;
             text-align: center;
-            /* Text style for "Linley’s O" */
+
             font-style: normal;
             letter-spacing: normal;
             line-height: normal;
-            margin-bottom: 50px ;
+            margin-bottom: 50px;
           `}
         >
           Linley’s Outside Catering Copyright 2021. All Rights Reserved.
