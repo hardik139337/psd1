@@ -53,6 +53,7 @@ export default function AboutLinley() {
               'sm:hidden ' +
               css`
                 height: 100%;
+                width: 100%;
               `
             }
             src='img/Layer_4.png'
@@ -61,7 +62,7 @@ export default function AboutLinley() {
         </div>
         <div
           className={
-            'col-span-7 md:p-10 sm:p-6 ' +
+            'col-span-7 lg:p-10 md:p-10 sm:p-6 ' +
             css`
               padding-left: 78px;
               padding-right: 52px;
@@ -70,13 +71,32 @@ export default function AboutLinley() {
         >
           <h1
             className={
-              'lg:text-5xl md:text-2xl md:mt-5  ' +
+              'lg:text-4xl md:text-2xl md:mt-5  ' +
               css`
-                max-width: 50%;
+                /* max-width: 50%; */
+                position: relative;
+
+                &::after {
+                  /* right: -101px;
+                  top: 67px; */
+                  bottom: 25%;
+                  content: '';
+                  width: 63px;
+                  height: 2px;
+                  background-color: #e0c39a;
+                  position: absolute;
+                }
               `
             }
           >
-            About Linley’s
+            About <br /> Linley’s{' '}
+            <span
+              className={css`
+                /* Style for "Rectangle" */
+
+                display: inline-block;
+              `}
+            ></span>
           </h1>
           <p className='mb-6 md:text-xs		'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

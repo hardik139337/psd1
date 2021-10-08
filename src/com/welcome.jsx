@@ -5,6 +5,8 @@ export default function Welcome() {
   return (
     <div
       className={css`
+        padding-top: 86px;
+
         background-color: #082132;
 
         background-image: url('img/Layer_2.png');
@@ -16,7 +18,6 @@ export default function Welcome() {
           background-color: #032c47;
 
           h2 {
-            /* Style for "welcome to" */
             margin-bottom: 35px;
             color: #e0c39a;
             font-family: Raleway;
@@ -27,14 +28,13 @@ export default function Welcome() {
             line-height: 46.09px;
             text-align: left;
             text-transform: uppercase;
-            /* Text style for "welcome to" */
+
             font-style: normal;
             letter-spacing: 2.88px;
             line-height: normal;
           }
 
           h1 {
-            /* Style for "linley’s o" */
             margin-bottom: 30px;
             color: #ffffff;
             font-family: Mermaid;
@@ -45,13 +45,12 @@ export default function Welcome() {
             line-height: 68px;
             text-align: left;
             text-transform: uppercase;
-            /* Text style for "linley’s o" */
+
             font-style: normal;
             letter-spacing: 3.84px;
             line-height: normal;
           }
           p {
-            /* Style for "Lorem ipsu" */
             max-width: 444px;
             color: #ffffff;
             font-family: Raleway;
@@ -61,7 +60,7 @@ export default function Welcome() {
             letter-spacing: normal;
             line-height: 28px;
             text-align: left;
-            /* Text style for "Lorem ipsu" */
+
             font-style: normal;
             letter-spacing: 0.96px;
             line-height: normal;
@@ -74,8 +73,8 @@ export default function Welcome() {
         }
       `}
     >
-      <div className='welcome w-11/12 grid mx-auto grid-cols-12 '>
-        <div className='catering col-span-8 md:p-10 sm:col-span-12 sm:p-5'>
+      <div className='welcome w-11/12 grid mx-auto grid-cols-12 mb-5'>
+        <div className='catering col-span-8  md:p-5 sm:col-span-12 sm:p-5'>
           <h2>
             {' '}
             <span
@@ -90,7 +89,7 @@ export default function Welcome() {
             ></span>{' '}
             welcome to
           </h2>
-          <h1 className='md:text-3xl lg:text-5xl '>
+          <h1 className='md:text-2xl lg:text-5xl '>
             linley’s outside catering
           </h1>
           <p>
@@ -104,12 +103,53 @@ export default function Welcome() {
           <img
             className={css`
               width: 100%;
+              height: 100%;
+              object-fit: cover;
             `}
             src='img/Layer_3.svg'
             alt=''
           />
         </div>
       </div>
+      <p
+        className={
+          'mb-5 ' +
+          css`
+            text-align: center;
+
+            width: 67px;
+            height: 10px;
+            color: #e0c39a;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 46.24px;
+            text-align: left;
+            text-transform: uppercase;
+
+            font-style: normal;
+            letter-spacing: 2.51px;
+            line-height: normal;
+            margin: 0 auto;
+          `
+        }
+      >
+        {' '}
+        scroll
+      </p>
+      <div
+        className={
+          'mb-5 ' +
+          css`
+            margin: 0 auto;
+            width: 2px;
+            height: 45px;
+            background-color: #e0c39a;
+          `
+        }
+      ></div>
     </div>
   );
 }

@@ -1,16 +1,17 @@
-// parseFloat(12.000.toFixed(2))
-
 import { css } from '@emotion/css';
 import React from 'react';
 
 export default function ourservices() {
   return (
     <div
-      className={css`
-        background-color: #021e30;
-        padding: 1px;
-        position: relative;
-      `}
+      className={
+        'overflow-x-hidden ' +
+        css`
+          background-color: #021e30;
+          padding: 1px;
+          position: relative;
+        `
+      }
     >
       <img
         className={
