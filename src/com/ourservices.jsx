@@ -67,7 +67,7 @@ export default function ourservices() {
                 line-height: normal;
               }
               p {
-                max-width: 422px;
+                max-width: 430px;
                 margin: 0 auto;
                 color: #ffffff;
                 font-family: Raleway;
@@ -88,14 +88,14 @@ export default function ourservices() {
       >
         <div
           className={
-            'ourservices ' +
+            'ourservices relative lg:mt-20  ' +
             css`
               padding-top: 100px;
               margin-bottom: 90px !important;
             `
           }
         >
-          <h1 className='sm:mb-6'>our services</h1>
+          <h1 className='sm:mb-6 mb-8'>our services</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut.
@@ -104,14 +104,14 @@ export default function ourservices() {
 
         <div
           className={
-            'grid grid-cols-4 mx-auto md:grid-cols-2 sm:grid-cols-1 ' +
+            'grid grid-cols-4 mx-auto lg:grid-cols-2 sm:grid-cols-1 ' +
             css`
               max-width: 1023px;
               margin-bottom: 140px;
 
               gap: 0 50px;
               div {
-                @media (max-width: 425px) {
+                @media (max-width: 1000px) {
                   .div1 {
                     margin-bottom: 15px !important;
                   }

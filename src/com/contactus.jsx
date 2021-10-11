@@ -20,6 +20,7 @@ export default function contactus() {
         <div
           className={css`
             margin: 100px auto;
+            max-width: 426px;
           `}
         >
           <h1
@@ -38,6 +39,7 @@ export default function contactus() {
               font-style: normal;
               letter-spacing: 3.36px;
               line-height: normal;
+              margin-bottom: 41px;
             `}
           >
             contact us

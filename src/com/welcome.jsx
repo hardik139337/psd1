@@ -73,8 +73,8 @@ export default function Welcome() {
         }
       `}
     >
-      <div className='welcome w-11/12 grid mx-auto grid-cols-12 mb-5'>
-        <div className='catering col-span-8  md:p-5 sm:col-span-12 sm:p-5'>
+      <div className='welcome container w-11/12 grid mx-auto grid-cols-12 mb-5'>
+        <div className='catering col-span-8 pr-3 pb-3  md:p-5 sm:col-span-12 sm:p-5 '>
           <h2>
             {' '}
             <span
@@ -89,7 +89,7 @@ export default function Welcome() {
             ></span>{' '}
             welcome to
           </h2>
-          <h1 className='md:text-2xl lg:text-5xl '>
+          <h1 className='md:text-2xl lg:text-4xl '>
             linley’s outside catering
           </h1>
           <p>

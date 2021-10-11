@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      '2xl': {'min': '1440px'},
-      'xl': { 'max': '1440px'},
-      'lg': { 'max': '1024px'},
+      '2xl': {'min': '1400px'},
+      'xl': { 'max': '1200px'},
+      'lg': { 'max': '992px'},
       'md': { 'max': '768px'},
-      'sm': { 'max': '425px'},
+      'sm': { 'max': '576px'},
     },
   },
   variants: {

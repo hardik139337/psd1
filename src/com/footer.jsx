@@ -11,7 +11,7 @@ export default function footer() {
     >
       <div
         className={
-          'container w-11/12 mx-auto ' +
+          'container  w-11/12 mx-auto ' +
           css`
             max-width: 1096px;
           `

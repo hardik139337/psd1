@@ -63,7 +63,7 @@ export default function Header() {
       `}
     >
       <header>
-        <div className='flex flex-wrap w-11/12 relative '>
+        <div className=' flex flex-wrap w-11/12 relative '>
           <img src='img/logo.png' alt='' />
 
           <div className='divdiv'>
