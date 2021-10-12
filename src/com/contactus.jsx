@@ -5,13 +5,17 @@ export default function contactus() {
   return (
     <div
       className={css`
+        input {
+          color: white;
+        }
+
         background-color: #032c47;
         padding: 1px;
       `}
     >
       <div
         className={
-          'container w-11/12 mx-auto ' +
+          ' w-11/12 mx-auto ' +
           css`
             max-width: 1096px;
           `
@@ -142,10 +146,11 @@ export default function contactus() {
             >
               your message
             </p>
-            <input
+
+            <textarea
               type='text'
               className={
-                ' ' +
+                'p-3 ' +
                 css`
                   width: 100%;
                   height: 170px;
@@ -153,6 +158,7 @@ export default function contactus() {
                   background-color: #032c47;
                   display: block;
                   margin-bottom: 54px;
+                  color: white;
                 `
               }
             />
@@ -164,6 +170,21 @@ export default function contactus() {
                 margin: 0 auto;
                 display: block;
                 margin-bottom: 100px;
+                /* Style for "submit" */
+
+                color: #021e30;
+                font-family: Raleway;
+                font-size: 14px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 96.01px;
+
+                text-transform: uppercase;
+                /* Text style for "submit" */
+                font-style: normal;
+                letter-spacing: 2.52px;
+                line-height: normal;
               `}
             >
               submit

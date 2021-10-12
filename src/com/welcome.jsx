@@ -5,11 +5,14 @@ export default function Welcome() {
   return (
     <div
       className={css`
-        padding-top: 86px;
+        padding-top: 30px;
 
         background-color: #082132;
 
         background-image: url('img/Layer_2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
         min-height: 679px;
         display: grid;
         place-items: center;
@@ -73,7 +76,7 @@ export default function Welcome() {
         }
       `}
     >
-      <div className='welcome container w-11/12 grid mx-auto grid-cols-12 mb-5'>
+      <div className='welcome  w-11/12 grid mx-auto grid-cols-12 mb-5'>
         <div className='catering col-span-8 pr-3 pb-3  md:p-5 sm:col-span-12 sm:p-5 '>
           <h2>
             {' '}
@@ -104,6 +107,7 @@ export default function Welcome() {
             className={css`
               width: 100%;
               height: 100%;
+              max-height: 463px;
               object-fit: cover;
             `}
             src='img/Layer_3.svg'
@@ -111,45 +115,47 @@ export default function Welcome() {
           />
         </div>
       </div>
-      <p
-        className={
-          'mb-5 ' +
-          css`
-            text-align: center;
+      <a href='#ids'>
+        <p
+          className={
+            'mb-5 ' +
+            css`
+              text-align: center;
 
-            width: 67px;
-            height: 10px;
-            color: #e0c39a;
-            font-family: Raleway;
-            font-size: 14px;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 46.24px;
-            text-align: left;
-            text-transform: uppercase;
+              width: 67px;
+              height: 10px;
+              color: #e0c39a;
+              font-family: Raleway;
+              font-size: 14px;
+              font-weight: 500;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 46.24px;
+              text-align: left;
+              text-transform: uppercase;
 
-            font-style: normal;
-            letter-spacing: 2.51px;
-            line-height: normal;
-            margin: 0 auto;
-          `
-        }
-      >
-        {' '}
-        scroll
-      </p>
-      <div
-        className={
-          'mb-5 ' +
-          css`
-            margin: 0 auto;
-            width: 2px;
-            height: 45px;
-            background-color: #e0c39a;
-          `
-        }
-      ></div>
+              font-style: normal;
+              letter-spacing: 2.51px;
+              line-height: normal;
+              margin: 0 auto;
+            `
+          }
+        >
+          {' '}
+          scroll
+        </p>
+        <div
+          className={
+            'mb-5 ' +
+            css`
+              margin: 0 auto;
+              width: 2px;
+              height: 45px;
+              background-color: #e0c39a;
+            `
+          }
+        ></div>
+      </a>
     </div>
   );
 }

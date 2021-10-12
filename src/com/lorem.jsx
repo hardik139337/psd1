@@ -55,7 +55,7 @@ export default function Lorem() {
 
         <div
           className={
-            'col-span-6 sm:p-5 ' +
+            'col-span-6 sm:p-5 sm:order-last ' +
             css`
               padding-right: 31px;
               padding-top: 10px;

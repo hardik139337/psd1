@@ -7,6 +7,7 @@ export default function Header() {
   return (
     <div
       className={css`
+        text-transform: uppercase;
         header {
           background-color: #021e30;
 
@@ -17,16 +18,18 @@ export default function Header() {
 
           align-items: center;
           margin: 0 auto;
-          min-height: 140px;
+          /* min-height: 140px; */
         }
         button {
           width: 165px;
           height: 47px;
           background-color: #e0c39a;
           margin-left: 62px;
+          text-transform: uppercase;
+          color: #021e30;
         }
 
-        img {
+        .img0 {
           margin-right: auto;
         }
         a {
@@ -64,8 +67,9 @@ export default function Header() {
     >
       <header>
         <div className=' flex flex-wrap w-11/12 relative '>
-          <img src='img/logo.png' alt='' />
-
+          <a href='' className='img0'>
+            <img src='img/logo.png' alt='' />
+          </a>
           <div className='divdiv'>
             <a className='h' href=''>
               Home

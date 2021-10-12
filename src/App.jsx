@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './com/Header';
-import './App.css';
+import './App.scss';
 
 import Welcome from './com/welcome';
 import { css } from '@emotion/css';

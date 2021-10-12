@@ -4,6 +4,7 @@ import React from 'react';
 export default function AboutLinley() {
   return (
     <div
+      id='ids'
       className={css`
         margin-top: 55px;
         margin-bottom: 64px;
@@ -54,6 +55,7 @@ export default function AboutLinley() {
               css`
                 height: 100%;
                 width: 100%;
+                max-height: 559px;
               `
             }
             src='img/Layer_4.png'
